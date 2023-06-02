@@ -1,0 +1,176 @@
+:root {
+    --mainWidth: 80%;
+    --mainAndAsideHeight: 500px;
+    --footerHeight: 100px;
+    --headerHeight: 140px;
+    --mainPadding: 20px;
+    --pageBackgroundColor: rgb(44, 44, 44);
+    --mainBackgroundColor: rgb(53, 53, 53);
+}
+
+html,
+body {
+    background-color: var(--pageBackgroundColor);
+    color: rgb(218, 218, 218);
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 30%, var(--pageBackgroundColor) 100%);
+    height: var(--headerHeight);
+}
+
+header >div {
+    overflow-x: hidden;
+    display: flex;
+    padding-top: 10px;
+    text-align: center;
+}
+header>div div{
+    width: var(--widthheaderdiv);
+    height: 80px;
+}
+header img{
+    position: relative;
+    z-index: 0;
+    animation: autko 15s infinite linear;
+}
+header h1{
+     background: -webkit-linear-gradient(rgba(199, 199, 199, 0.8), rgba(255, 255, 255, 0.8));
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 2;
+}
+header nav {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    /* overflow: visible; */
+}
+header a{
+    text-decoration: none;
+}
+
+#main {
+    display: flex;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: var(--mainPadding);
+    margin-bottom: var(--mainPadding);
+}
+
+main {
+    background: rgb(152, 152, 152);
+    border: 3px black solid;
+    color: black;
+    width: var(--mainWidth);
+    min-height: calc(100vh - var(--footerHeight) - var(--headerHeight) - (var(--mainPadding) * 2) - 6px);
+}
+
+aside {
+    font-size: 16px;
+    padding-left: 50px;
+    width: calc(100% - var(--mainWidth) - 50px);
+    max-width: 200px;
+    background: linear-gradient(90deg, var(--mainBackgroundColor) 0%, rgb(20, 20, 20) 40%);
+}
+aside>div{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
+    overflow-x: hidden;
+}
+aside nav {
+    padding: 4px 0;
+}
+
+aside nav:hover a {
+    color: rgb(138, 185, 199);
+    ;
+}
+
+aside a {
+    text-decoration: none;
+    color: rgb(182, 225, 238);
+}
+footer {
+    padding-top: 40px;
+    clear: both;
+    height: calc(var(--footerHeight) - 40px);
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 44%, var(--pageBackgroundColor) 100%);
+}
+footer div{
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+}
+#menu>div {
+    width: calc(90% / 4);
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#menu>div div {
+    background-color: rgba(36, 35, 35, 65%);
+    width: 100%;
+    display: none;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 13px;
+}
+#menu>div div:first-child{
+    margin-top: 20px;
+}
+
+#menu>div:hover>div {
+    display: block;
+}
+
+#menu>div>div:hover {
+    background-color: rgba(36, 35, 35, 70%);
+}
+
+#menu a {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+}
+
+.mail {
+    width: fit-content;
+}
+
+.mail {
+    scale: 60%;
+}
+
+.mail svg path {
+    fill: white;
+}
+#contact{
+    line-height: 30px;
+}
+
+@keyframes autko{
+    0% {
+        right: -10%; 
+    }
+    40% {
+        right: 60%; 
+    }
+    70% {
+        right: 40%;
+    }
+    100% {
+        right: 110%;
+    }
+}

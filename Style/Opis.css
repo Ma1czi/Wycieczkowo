@@ -1,0 +1,50 @@
+#mainPicture{
+    background-image: url("../Zdjęcia/Włochy/Włochy1.jpg");
+    background-size: cover;
+    width: 80%;
+    height: 400px;
+    border-radius: 100px;
+    margin: 50px auto;
+    scale: 100%;
+    transition: border-radius 1s, scale 1s;
+}
+#mainPicture:hover{
+    border-radius: 10px;
+    scale: 110%;
+}
+#opis{
+    background-color: rgb(231, 215, 164);
+    padding: 30px;
+    border-radius: 30px;
+    font-size: 24px;
+    width: 85%;
+    margin: auto;
+}
+#opis table{
+    margin-left: 30px;
+}
+#opis table td{
+    padding: 3px 10px;
+}
+#opis svg{
+    position: relative;
+    top: 14px;
+    width: 40px;
+}
+#opis a{
+    font-size: 28px;
+    text-decoration: none;
+    color: rgb(199, 28, 28);
+}
+#opis a:hover{
+    color: rgb(136, 18, 18);
+}
+#gallery img{
+    width: calc(100% - 20px);
+    padding: 10px;
+    
+}
+#gallery{
+    background-color: rgb(231, 215, 164);
+    margin: 50px 10px;
+}

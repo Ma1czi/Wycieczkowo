@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <div style="--widthheaderdiv: 30%;"></div>
+            <div style="--widthheaderdiv: 40%;" style="position: relative;">
+                <h1><a href="index.html">Wycieczkowo</a></h1>
+            </div>
+            <div style="--widthheaderdiv: 30%;">
+            </div>
+            <img src="Zdjęcia/autko.png" alt="autko" width="130px">
+        </div>
+        <nav id="menu">
+            <div>Wycieczki
+                <div><a href="Włochy.html">Włochy</a></div>
+                <div><a href="">Niemcy</a></div>
+                <div><a href="">Sieradz</a></div>
+                <div><a href="">Węgry</a></div>
+                <div><a href="">Francja</a></div>
+                <div><a href="">Holandia</a></div>
+            </div>
+            <div>Kontakt
+                <div><a href="https://www.instagram.com/mikolaj_xp/" target="_blank">Instagram</a></div>
+                <div><a href="https://www.facebook.com/profile.php?id=100009391564330" target="_blank">Facebook</a></div>
+                <div><a href="mailto:wycieczkowo@gmail.com" target="_blank">Mail</a></div>
+            </div>
+            <div>Zgłoszenia
+                <div><a href="Formularz.html">Włochy</a></div>
+                <div><a href="Formularz.html">Niemcy</a></div>
+                <div><a href="Formularz.html">Sieradz</a></div>
+                <div><a href="Formularz.html">Węgry</a></div>
+                <div><a href="Formularz.html">Francja</a></div>
+                <div><a href="Formularz.html">Holandia</a></div>
+            </div>
+            <div>Dodatkowe
+                <div><a href="">Galeria</a></div>
+            </div>
+        </nav>
+    </header>
+    <div id="main">
+        <main>
+            <section id="obraz">
+                <img src="Zdjęcia/Włochy.jpg" alt="Włochy">
+            </section>
+            <section id="form">
+                <fieldset>
+                    <form action="" method="post">
+                        <table>
+                            <tr>
+                                <td><label for="Wycieczka">Wycieczka: </label></td>
+                                <td><select name="" id="Wycieczka">
+                                    <option value="Włochy">Włochy</option>
+                                    <option value="Niemcy">Niemcy</option>
+                                    <option value="Sieradz">Sieradz</option>
+                                    <option value="Węgry">Węgry</option>
+                                    <option value="Francja">Francja</option>
+                                    <option value="Holandia">Holandia</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Imię:">Imię: </label></td>
+                                <td><input type="text" name="Imie" id="Imię:" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Nazwisko">Nazwisko:</label></td>
+                                <td><input type="text" name="Nazwisko" id="Nazwisko" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="urodziny">Data urodzenia:</label></td>
+                                <td><input type="date" name="urodziny" id="urodziny" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Miejsce">Miejsce zamieszkania:</label></td>
+                                <td><input type="text" name="Zameldowanie" id="Miejsce" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="telefon">Numer telefonu:</label></td>
+                                <td><input type="text" name="telefon" id="telefon" required pattern="[0-9]{9}" placeholder="000000000"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="adres">Adres email:</label></td>
+                                <td><input type="email" name="email" id="adres" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="info">Dodatkowe informacje o uczestniku:</label></td>
+                                <td><textarea name="dodatkowe" id="info" cols="20" rows="2"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><input type="reset" value="Resetuj"><input type="submit" value="Wyślij"></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+                
+            </section>
+        </main>
+        <aside>
+            <div>
+                <section id="contact">
+
+                    <h4>Kontakt:</h4>
+                    <hr>
+                    <nav>
+                      <i class="fa fa-phone"></i>  575-640-262
+                    </nav>
+                    <nav>
+                        <i class="material-icons" style="font-size:18px">email</i> 04miki@wp.pl
+                    </nav>
+                    <nav>
+                        <i class="material-icons" style="font-size:18px">email</i> wycieczkowo@gmail.com
+                    </nav>
+                </section>
+                <br><br>
+                <section>
+                    <h4>Dostępne Wycieczki:</h4>
+                    <hr>
+                    <ul>
+                        <nav>
+                            <li><a href="Włochy.html">Włochy</a></li>
+                        </nav>
+                        <nav>
+                            <li><a href="">Niemcy</a></li>
+                        </nav>
+                        <nav>
+                            <li><a href="">Sieradz</a></li>
+                        </nav>
+                        <nav>
+                            <li><a href="">Węgry</a></li>
+                        </nav>
+                        <nav>
+                            <li><a href="">Francja</a></li>
+                        </nav>
+                        <nav>
+                            <li><a href="">Holandia</a></li>
+                        </nav>
+    
+                    </ul>
+                </section>
+            </div>
+            
+        </aside>
+    </div>
+    <footer>
+        <div>&copy; Mikołaj Bulzacki</div>
+    </footer>
+</body>
+<script src="Skrypty/Form.js"></script>
+</html>

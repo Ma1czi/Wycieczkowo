@@ -1,0 +1,40 @@
+:root{
+    --obrazwidth: 50%;
+    --divmargin: 30px;
+}
+main>section{
+    min-height: 600px;
+    display: flex;
+}
+.obraz{
+    margin: var(--divmargin);
+    width: calc(var(--obrazwidth) - var(--divmargin) * 2);
+    overflow: hidden;
+
+}
+.obraz img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    border-radius: 50%;
+    scale: 100%;
+    transition: border-radius 1s, scale 1s;
+}
+.obraz:hover img{
+    border-radius: 50px;
+}
+.opis{
+    position: relative;
+    transform: rotate(var(--rotate));
+    background-image: url("../Zdjęcia/notes.jpg");
+    background-size: cover;
+    margin: var(--divmargin);
+    width: calc(100% - var(--obrazwidth) - var(--divmargin) * 2 - 40px * 2);
+    padding: 20px 40px;
+    font-size: 23px;
+    line-height: 32px;
+}
+.opis table td{
+    padding: 3px 10px;
+}

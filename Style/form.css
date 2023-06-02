@@ -1,0 +1,65 @@
+
+main > section{
+    margin: auto;
+}
+#obraz{
+    margin-top: 70px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    width: max-content;
+    max-width: 500px;
+    border-radius: 50px;
+    border: 2px black solid;
+    scale: 120%;
+    transition: border-radius 1s, scale 1s;
+}
+#obraz img{
+    margin: auto;
+}
+#obraz:hover{
+    border-radius: 10px;
+    scale: 140%;
+}
+#form{
+    margin-top: 80px;
+    width: 60%;
+}
+
+fieldset{
+    padding: 30px;
+    font-size: 24px;
+    background-color: rgb(231, 215, 164);
+    border: 2px black solid;
+    border-radius: 10%;
+}
+input{
+    height: 27px;
+    padding: 3px 10px;
+    background-color: rgb(202, 188, 139);
+    border: none;
+    border-radius: 50px;
+    transition: border-radius 0.3s;
+}
+input:focus{
+    outline: none;
+    border-radius: 0px;
+}
+textarea{
+    padding: 10px;
+    background-color: rgb(202, 188, 139);
+    border: none;
+    border-radius: 50px;
+    transition: border-radius 0.3s;
+}
+textarea:focus{
+    outline: none;
+    border-radius: 10px;
+}
+select{
+    height: 24px;
+    background-color: rgb(202, 188, 139);
+    border: none;
+    border-radius: 50px;
+    transition: border-radius 0.3s;
+}
